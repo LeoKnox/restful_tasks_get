@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Tasks!
+  </h1>
+</div>
+<ul>
+  <li *ngFor="let x of tasks">
+    <h2>{{ x.title }}</h2>
+    <p>{{ x.description }}</p>
+  </li>
+</ul>
+<h3>Do this now! {{ change.title }} : {{ change.description }}</h3>
+
+<router-outlet></router-outlet>
